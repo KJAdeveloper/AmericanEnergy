@@ -134,25 +134,28 @@
             font-weight: 300;
         }
         
-        .hero-stats {
+        /* Hero Stats - Completely rewritten */
+        .hero-statistics {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 30px;
             margin: 50px 0;
         }
         
-        .hero-stat {
+        .stat-box {
             text-align: center;
         }
         
-        .hero-stat-number {
+        .stat-value {
             font-size: 3rem;
             font-weight: 900;
             color: #ff6b35;
             display: block;
+            margin-bottom: 10px;
+            line-height: 1;
         }
         
-        .hero-stat-label {
+        .stat-description {
             color: #d0d0d0;
             font-size: 1rem;
             text-transform: uppercase;
@@ -663,22 +666,22 @@
                 AmericanEnergy.com domain available for partnership or purchase
             </p>
             
-            <div class="hero-stats">
-                <div class="hero-stat">
-                    <span class="hero-stat-number">1 TW </span>
-                    <span class="hero-stat-label">Vision Scale</span>
+            <div class="hero-statistics">
+                <div class="stat-box">
+                    <div class="stat-value">1 TW</div>
+                    <div class="stat-description">Vision Scale</div>
                 </div>
-                <div class="hero-stat">
-                    <span class="hero-stat-number">1 MW</span>
-                    <span class="hero-stat-label">My Experience</span>
+                <div class="stat-box">
+                    <div class="stat-value">1 MW</div>
+                    <div class="stat-description">My Experience</div>
                 </div>
-                <div class="hero-stat">
-                    <span class="hero-stat-number">100k+</span>
-                    <span class="hero-stat-label">Robots Needed</span>
+                <div class="stat-box">
+                    <div class="stat-value counter-animate">10k+</div>
+                    <div class="stat-description">Robots Needed</div>
                 </div>
-                <div class="hero-stat">
-                    <span class="hero-stat-number">🇺🇸</span>
-                    <span class="hero-stat-label">Made in America</span>
+                <div class="stat-box">
+                    <div class="stat-value">🇺🇸</div>
+                    <div class="stat-description">Made in America</div>
                 </div>
             </div>
             
@@ -803,7 +806,8 @@
                         Research indicates potential for 5-10x construction speed improvements.
                     </p>
                     <ul class="tech-specs">
-                        <li>Target: 100,000+ robots for 1 TW deployment</li>
+                        <li>Target: 10,000+ robots for 1 TW deployment</li>
+                        <li>Ratio: ~10 robots per MW of capacity</li>
                         <li>Sources: Available industrial robots + custom training</li>
                         <li>Tesla Optimus future potential when available</li>
                         <li>Alternative: Boston Dynamics, Built Robotics, others</li>
