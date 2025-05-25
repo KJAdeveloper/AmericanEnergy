@@ -1,0 +1,1182 @@
+<div style="margin-bottom: 30px;">
+                <p style="font-size: 1.1rem; color: #<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Energy - 1 Terawatt Solar Revolution</title>
+    <meta name="description" content="Building America's energy independence through 1 TW of robot-constructed solar arrays powering AI and Bitcoin data centers.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        /* Header & Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255, 107, 53, 0.2);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, #ff6b35, #ffa500, #ffd700);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+        
+        .nav-menu a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            font-size: 1rem;
+        }
+        
+        .nav-menu a:hover {
+            color: #ff6b35;
+        }
+        
+        .cta-nav {
+            background: linear-gradient(45deg, #ff6b35, #ffa500);
+            color: #ffffff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.9rem;
+        }
+        
+        .cta-nav:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.4);
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a2a2a 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23ff6b35" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            text-align: center;
+            max-width: 1200px;
+            padding: 0 20px;
+            z-index: 2;
+            position: relative;
+        }
+        
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 7rem);
+            font-weight: 900;
+            background: linear-gradient(45deg, #ff6b35, #ffa500, #ffd700);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+            line-height: 1.1;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            color: #f0f0f0;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .hero-stat {
+            text-align: center;
+        }
+        
+        .hero-stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #ff6b35;
+            display: block;
+        }
+        
+        .hero-stat-label {
+            color: #d0d0d0;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        
+        .hero-buttons {
+            margin-top: 50px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #ff6b35, #ffa500);
+            color: #ffffff;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(255, 107, 53, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #ffffff;
+            padding: 18px 40px;
+            border: 2px solid #ffd700;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+        }
+        
+        .btn-secondary:hover {
+            background: #ffd700;
+            color: #000000;
+            transform: translateY(-3px);
+        }
+        
+        /* Market Opportunity Section */
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .section:nth-child(even) {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 60px;
+            background: linear-gradient(45deg, #ff6b35, #ffd700);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .opportunity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+        
+        .opportunity-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 40px 30px;
+            border: 2px solid rgba(255, 107, 53, 0.3);
+            transition: all 0.4s ease;
+            text-align: center;
+        }
+        
+        .opportunity-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(255, 107, 53, 0.6);
+            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.2);
+        }
+        
+        .opportunity-icon {
+            font-size: 4rem;
+            margin-bottom: 25px;
+            display: block;
+        }
+        
+        .opportunity-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        
+        .opportunity-stat {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #ff6b35;
+            margin-bottom: 15px;
+        }
+        
+        .opportunity-desc {
+            color: #d0d0d0;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        
+        /* Vision Section */
+        .vision {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 215, 0, 0.05));
+            border-top: 3px solid #ff6b35;
+            border-bottom: 3px solid #ffd700;
+        }
+        
+        .vision-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        
+        .vision-text h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+        
+        .vision-text p {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            color: #f0f0f0;
+            margin-bottom: 25px;
+        }
+        
+        .vision-highlights {
+            list-style: none;
+            margin: 30px 0;
+        }
+        
+        .vision-highlights li {
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 1.1rem;
+            color: #f0f0f0;
+        }
+        
+        .vision-highlights li::before {
+            content: '⚡';
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .vision-visual {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .vision-stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            border: 1px solid rgba(255, 107, 53, 0.3);
+        }
+        
+        .vision-stat-card h3 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #ff6b35;
+            margin-bottom: 10px;
+        }
+        
+        .vision-stat-card p {
+            color: #d0d0d0;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        /* Technology Section */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+        
+        .tech-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 40px;
+            border: 2px solid rgba(255, 107, 53, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .tech-card:hover {
+            border-color: rgba(255, 107, 53, 0.6);
+            transform: translateY(-5px);
+        }
+        
+        .tech-icon {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            display: block;
+        }
+        
+        .tech-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        
+        .tech-desc {
+            color: #d0d0d0;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .tech-specs {
+            list-style: none;
+        }
+        
+        .tech-specs li {
+            padding: 8px 0;
+            color: #f0f0f0;
+            font-size: 0.95rem;
+        }
+        
+        .tech-specs li::before {
+            content: '→';
+            color: #ff6b35;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        /* Timeline Section */
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .timeline-item {
+            background: rgba(255, 107, 53, 0.1);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            border: 2px solid rgba(255, 107, 53, 0.3);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-item:hover {
+            transform: translateY(-10px);
+            border-color: rgba(255, 107, 53, 0.6);
+        }
+        
+        .timeline-year {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #ff6b35;
+            margin-bottom: 20px;
+        }
+        
+        .timeline-capacity {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+        
+        .timeline-desc {
+            color: #f0f0f0;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+            text-align: center;
+        }
+        
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .contact h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 30px;
+            background: linear-gradient(45deg, #ff6b35, #ffd700);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .contact-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 50px 0;
+        }
+        
+        .contact-option {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 40px 30px;
+            border: 2px solid rgba(255, 107, 53, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .contact-option:hover {
+            border-color: rgba(255, 107, 53, 0.6);
+            transform: translateY(-5px);
+        }
+        
+        .contact-option h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ff6b35;
+            margin-bottom: 20px;
+        }
+        
+        .contact-option p {
+            color: #f0f0f0;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #0a0a0a;
+            border-top: 1px solid rgba(255, 107, 53, 0.2);
+            padding: 60px 0 30px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, #ff6b35, #ffa500, #ffd700);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: #d0d0d0;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #ff6b35;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero-stats {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .opportunity-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .vision-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .tech-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .timeline {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .contact-options {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-on-scroll {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        /* Floating Animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">AmericanEnergy.com</div>
+            <ul class="nav-menu">
+                <li><a href="#opportunity">Opportunity</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="mailto:alves.kenny@gmail.com?subject=AmericanEnergy.com Inquiry" class="cta-nav">Contact Kenny</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>AMERICAN ENERGY</h1>
+            <div class="hero-subtitle">1 Terawatt Solar Revolution</div>
+            <p style="font-size: 1.4rem; color: #f0f0f0; margin-bottom: 40px; font-weight: 600;">
+                Concept for America's energy independence through robot-constructed solar arrays<br>
+                AmericanEnergy.com domain available for partnership or purchase
+            </p>
+            
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number">1 TW </span>
+                    <span class="hero-stat-label">Vision Scale</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">1 MW</span>
+                    <span class="hero-stat-label">My Experience</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">100k+</span>
+                    <span class="hero-stat-label">Robots Needed</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">🇺🇸</span>
+                    <span class="hero-stat-label">Made in America</span>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="tel:+14016266378" class="btn-primary">Call 401-626-6378</a>
+                <a href="mailto:alves.kenny@gmail.com?subject=AmericanEnergy.com Inquiry" class="btn-secondary">Email Kenny</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Opportunity Section -->
+    <section id="opportunity" class="section">
+        <div class="container">
+            <h2 class="section-title">The $2 Trillion Energy Crisis</h2>
+            <p style="text-align: center; font-size: 1.3rem; color: #f0f0f0; margin-bottom: 60px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                AI and Bitcoin are creating unprecedented energy demand. Solar professional with 1 MW experience 
+                and New England real estate background presents <strong style="color: #ff6b35;">scalable vision for energy independence.</strong>
+            </p>
+            
+            <div class="opportunity-grid">
+                <div class="opportunity-card">
+                    <span class="opportunity-icon">🧠</span>
+                    <h3 class="opportunity-title">AI Energy Explosion</h3>
+                    <div class="opportunity-stat">160%</div>
+                    <p class="opportunity-desc">
+                        Data center energy demand growth by 2030. ChatGPT uses 10x more energy than Google search.
+                        AI will consume more electricity than all manufacturing combined.
+                    </p>
+                </div>
+                
+                <div class="opportunity-card">
+                    <span class="opportunity-icon">₿</span>
+                    <h3 class="opportunity-title">Bitcoin Mining Boom</h3>
+                    <div class="opportunity-stat">177 TWh</div>
+                    <p class="opportunity-desc">
+                        Annual Bitcoin energy consumption with 37.8% US market share. 
+                        Direct solar power = maximum profitability and instant monetization.
+                    </p>
+                </div>
+                
+                <div class="opportunity-card">
+                    <span class="opportunity-icon">⚡</span>
+                    <h3 class="opportunity-title">Grid Limitations</h3>
+                    <div class="opportunity-stat">50%</div>
+                    <p class="opportunity-desc">
+                        Of US electricity growth will come from data centers by 2030. 
+                        The grid simply cannot scale fast enough. Off-grid is the only solution.
+                    </p>
+                </div>
+                
+                <div class="opportunity-card">
+                    <span class="opportunity-icon">🚀</span>
+                    <h3 class="opportunity-title">Stargate Initiative</h3>
+                    <div class="opportunity-stat">$500B</div>
+                    <p class="opportunity-desc">
+                        OpenAI and SoftBank announced massive data center investments. 
+                        They need power. We're building the infrastructure to supply it.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="section vision">
+        <div class="container">
+            <div class="vision-content">
+                <div class="vision-text">
+                    <h2>Vision for Energy Independence</h2>
+                    <p>
+                        Experienced solar professional with 1 MW operational experience and New England 
+                        real estate development background sees unprecedented opportunity in AI/Bitcoin energy demand.
+                    </p>
+                    <p>
+                        <strong style="color: #ff6b35;">This represents the perfect convergence:</strong> 
+                        Proven solar expertise, real estate development experience, and revolutionary 
+                        robot construction technology to scale beyond current grid limitations.
+                    </p>
+                    
+                    <ul class="vision-highlights">
+                        <li>Background: 1 MW solar experience + self storage & retail properties</li>
+                        <li>Vision: Robot-constructed arrays built faster than traditional methods</li>
+                        <li>Strategy: Direct power to high-value AI and Bitcoin operations</li>
+                        <li>Goal: Scale proven concepts to unprecedented capacity levels</li>
+                        <li>Asset: AmericanEnergy.com domain perfectly positioned for this vision</li>
+                    </ul>
+                </div>
+                
+                <div class="vision-visual">
+                    <div class="vision-stat-card">
+                        <h3>1 MW</h3>
+                        <p>Solar Experience</p>
+                    </div>
+                    <div class="vision-stat-card">
+                        <h3>15+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="vision-stat-card">
+                        <h3>Multi</h3>
+                        <p>Property Background</p>
+                    </div>
+                    <div class="vision-stat-card">
+                        <h3>1 TW</h3>
+                        <p>Vision Scale</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="section">
+        <div class="container">
+            <h2 class="section-title">Revolutionary Technology Stack</h2>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <span class="tech-icon">🤖</span>
+                    <h3 class="tech-title">Robot Construction Vision</h3>
+                    <p class="tech-desc">
+                        Deploy specialized construction robots for autonomous solar installation. 
+                        Research indicates potential for 5-10x construction speed improvements.
+                    </p>
+                    <ul class="tech-specs">
+                        <li>Target: 100,000+ robots for 1 TW deployment</li>
+                        <li>Sources: Available industrial robots + custom training</li>
+                        <li>Tesla Optimus future potential when available</li>
+                        <li>Alternative: Boston Dynamics, Built Robotics, others</li>
+                        <li>Focus: Solar panel installation specialization</li>
+                    </ul>
+                </div>
+                
+                <div class="tech-card">
+                    <span class="tech-icon">☀️</span>
+                    <h3 class="tech-title">Proven Solar Expertise</h3>
+                    <p class="tech-desc">
+                        1 MW operational experience with C&I solar projects demonstrates 
+                        foundation knowledge for massive scaling with robot assistance.
+                    </p>
+                    <ul class="tech-specs">
+                        <li>1 MW operational experience</li>
+                        <li>Understanding of $0.76/W utility-scale costs</li>
+                        <li>Knowledge of $31/MWh LCOE with incentives</li>
+                        <li>Project management background</li>
+                        <li>Industry relationships and knowledge</li>
+                    </ul>
+                </div>
+                
+                <div class="tech-card">
+                    <span class="tech-icon">⚡</span>
+                    <h3 class="tech-title">Direct Power Systems</h3>
+                    <p class="tech-desc">
+                        Off-grid architecture eliminates transmission losses and grid 
+                        dependencies while maximizing utilization efficiency.
+                    </p>
+                    <ul class="tech-specs">
+                        <li>Zero transmission losses</li>
+                        <li>500 MW battery storage per facility</li>
+                        <li>Instant load balancing</li>
+                        <li>99.9% uptime guarantee</li>
+                        <li>Scalable modular design</li>
+                    </ul>
+                </div>
+                
+                <div class="tech-card">
+                    <span class="tech-icon">🏢</span>
+                    <h3 class="tech-title">Real Estate Background</h3>
+                    <p class="tech-desc">
+                        Development and management experience with self storage facilities and retail 
+                        shopping centers in New England demonstrates scalable project capabilities.
+                    </p>
+                    <ul class="tech-specs">
+                        <li>Multi-property development experience</li>
+                        <li>Self storage facilities background</li>
+                        <li>Retail shopping center knowledge</li>
+                        <li>New England market familiarity</li>
+                        <li>Project management and scaling experience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section">
+        <div class="container">
+            <h2 class="section-title">5-Year Execution Roadmap</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: #f0f0f0; margin-bottom: 60px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Conceptual roadmap for scaling from current 1 MW portfolio to terawatt capacity through innovation and partnership.
+            </p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">Background</div>
+                    <div class="timeline-capacity">1 MW</div>
+                    <p class="timeline-desc">
+                        Solar professional with 1 MW experience. 
+                        Real estate background with self storage & retail properties in New England.
+                    </p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">Phase 1</div>
+                    <div class="timeline-capacity">10-100 MW</div>
+                    <p class="timeline-desc">
+                        Pilot robot-assisted construction program. Test automation 
+                        technologies and refine processes for larger scale.
+                    </p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">Phase 2</div>
+                    <div class="timeline-capacity">1 GW</div>
+                    <p class="timeline-desc">
+                        Scale robot deployment and construction efficiency. 
+                        Establish partnerships with AI/Bitcoin operators.
+                    </p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">Phase 3</div>
+                    <div class="timeline-capacity">100 GW</div>
+                    <p class="timeline-desc">
+                        Major capacity expansion with proven robot workforce. 
+                        Regional energy supply for data center clusters.
+                    </p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">Vision</div>
+                    <div class="timeline-capacity">1 TW</div>
+                    <p class="timeline-desc">
+                        Ultimate goal: Terawatt-scale capacity contributing significantly 
+                        to American energy independence and grid resilience.
+                    </p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 60px;">
+                <h3 style="color: #ffffff; font-size: 2rem; margin-bottom: 20px;">⚡ Scalable Vision ⚡</h3>
+                <p style="color: #f0f0f0; font-size: 1.2rem; line-height: 1.6;">
+                    Experienced solar professional ready to scale. Background demonstrates capability.<br>
+                    <span style="color: #ff6b35; font-size: 1.3rem; font-weight: 700;">ROBOT AUTOMATION + SOLAR EXPERTISE = UNPRECEDENTED SCALE</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Advantages Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Why We Win</h2>
+            
+            <div class="opportunity-grid">
+                <div class="opportunity-card">
+                    <span class="opportunity-icon">🏆</span>
+                    <h3 class="opportunity-title">First Mover Advantage</h3>
+                    <p class="opportunity-desc">
+                        While others debate grid connections, we're already building. 
+                        Robot construction gives us a 5+ year head start that's impossible to catch.
+                    </p>
+                </div>
+                
+                <div class="opportunity-card">
+                    <span class="opportunity-icon">💰</span>
+                    <h3 class="opportunity-title">Self-Funding Model</h3>
+                    <p class="opportunity-desc">
+                        Bitcoin mining provides instant cashflow from day one. 
+                        No waiting for complex PPAs or regulatory approvals. Pure profit drives expansion.
+                    </p>
+                </div>
+                
+                <div class="opportunity-card">
+                    <span class="opportunity-icon">🎯</span>
+                    <h3 class="opportunity-title">Perfect Timing</h3>
+                    <p class="opportunity-desc">
+                        AI energy demand exploding. Tesla robots ready for deployment. 
+                        Bitcoin at record highs. All trends converging at the perfect moment.
+                    </p>
+                </div>
+                
+                <div class="opportunity-card">
+                    <span class="opportunity-icon">🇺🇸</span>
+                    <h3 class="opportunity-title">American-Made</h3>
+                    <p class="opportunity-desc">
+                        Built in America, by Americans, for American energy independence. 
+                        No supply chain vulnerabilities. Total strategic control.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>AmericanEnergy.com Available</h2>
+                <p style="font-size: 1.3rem; color: #f0f0f0; margin-bottom: 40px; line-height: 1.6;">
+                    Perfect domain for energy independence vision. Two opportunities to get involved.
+                </p>
+                
+                <div class="contact-options">
+                    <div class="contact-option">
+                        <h3>🤝 Partnership Opportunity</h3>
+                        <p>
+                            Partner with experienced solar professional to execute 1 TW vision. 
+                            Bring capital, expertise, or resources to scale this ambitious concept.
+                        </p>
+                        <p style="color: #ff6b35; font-weight: 700; font-size: 1.1rem;">
+                            Background: 1 MW solar experience + real estate<br>
+                            Vision: Terawatt-scale robot-assisted construction<br>
+                            Opportunity: Ground floor of energy revolution
+                        </p>
+                        <a href="mailto:alves.kenny@gmail.com?subject=Partnership Opportunity - AmericanEnergy.com" class="btn-primary">Email Kenny</a>
+                    </div>
+                    
+                    <div class="contact-option">
+                        <h3>🏷️ Domain Purchase</h3>
+                        <p>
+                            Acquire AmericanEnergy.com domain for your own energy independence 
+                            vision, project, or investment opportunity.
+                        </p>
+                        <p style="color: #ffd700; font-weight: 700; font-size: 1.1rem;">
+                            Premium domain: AmericanEnergy.com<br>
+                            Perfect for: Energy companies, infrastructure funds<br>
+                            Application: Solar, wind, battery, or grid projects
+                        </p>
+                        <a href="mailto:alves.kenny@gmail.com?subject=Domain Purchase Inquiry - AmericanEnergy.com" class="btn-secondary">Email About Domain</a>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 60px; padding: 40px; background: rgba(255, 107, 53, 0.1); border-radius: 20px; border: 2px solid rgba(255, 107, 53, 0.3);">
+                    <h3 style="color: #ff6b35; font-size: 1.8rem; margin-bottom: 20px;">📞 Direct Contact</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: left;">
+                        <div>
+                            <h4 style="color: #ffffff; margin-bottom: 10px;">📧 Email</h4>
+                            <p style="color: #f0f0f0;"><a href="mailto:alves.kenny@gmail.com" style="color: #ffd700;">alves.kenny@gmail.com</a></p>
+                        </div>
+                        <div>
+                            <h4 style="color: #ffffff; margin-bottom: 10px;">📱 Phone</h4>
+                            <p style="color: #f0f0f0;"><a href="tel:+14016266378" style="color: #ffd700;">401-626-6378</a></p>
+                        </div>
+                        <div>
+                            <h4 style="color: #ffffff; margin-bottom: 10px;">🏢 Location</h4>
+                            <p style="color: #f0f0f0;">New England, USA</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #ffffff; margin-bottom: 10px;">⚡ Response</h4>
+                            <p style="color: #f0f0f0;">Within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 40px;">
+                    <p style="color: #d0d0d0; font-size: 1rem;">
+                        <strong>About Kenny:</strong> Solar professional with 1 MW experience seeking partners or domain buyers<br>
+                        <strong>Background:</strong> Solar projects + real estate development in New England<br>
+                        <strong>Vision:</strong> Scale proven concepts with robot automation to unprecedented capacity
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">AmericanEnergy.com</div>
+            
+            <div class="footer-links">
+                <a href="#opportunity">Market Opportunity</a>
+                <a href="#vision">Our Vision</a>
+                <a href="#technology">Technology</a>
+                <a href="#timeline">Timeline</a>
+                <a href="#contact">Contact</a>
+                <a href="mailto:alves.kenny@gmail.com?subject=AmericanEnergy.com Inquiry">Email Kenny</a>
+            </div>
+            
+            <div style="margin-bottom: 30px;">
+                <p style="font-size: 1.1rem; color: #f0f0f0; margin-bottom: 15px; font-weight: 600;">
+                    🇺🇸 AmericanEnergy.com - Premium Domain Available 🇺🇸
+                </p>
+                <p style="color: #d0d0d0; line-height: 1.6;">
+                    Solar professional Kenny Alves with 1 MW experience and New England real estate background.<br>
+                    <span style="color: #ff6b35;">Vision: Scale to terawatt capacity through robot automation.</span>
+                </p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AmericanEnergy.com. Domain and concept available for partnership or purchase.</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">
+                    Current: 1 MW solar portfolio. Vision: Terawatt-scale expansion. 
+                    All projections are conceptual and subject to market conditions.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling and animations -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerHeight = 80;
+                    const targetPosition = target.offsetTop - headerHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.opportunity-card, .tech-card, .timeline-item, .vision-stat-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Add floating animation to hero stats
+        document.querySelectorAll('.hero-stat').forEach((stat, index) => {
+            stat.style.animationDelay = `${index * 0.2}s`;
+            stat.classList.add('floating');
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(10, 10, 10, 0.98)';
+            } else {
+                header.style.background = 'rgba(10, 10, 10, 0.95)';
+            }
+        });
+
+        // Add counter animation for numbers
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            
+            function updateCounter() {
+                start += increment;
+                if (start < target) {
+                    element.textContent = Math.floor(start);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = target;
+                }
+            }
+            updateCounter();
+        }
+
+        // Trigger counter animations when hero stats come into view
+        const heroStatsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const numberElements = entry.target.querySelectorAll('.hero-stat-number');
+                    numberElements.forEach(el => {
+                        const text = el.textContent;
+                        if (text.includes('TW')) {
+                            animateCounter(el, 1);
+                            setTimeout(() => el.textContent = '1 TW', 2000);
+                        } else if (text.includes('B')) {
+                            const num = parseInt(text.replace(/[^0-9]/g, ''));
+                            animateCounter(el, num);
+                            setTimeout(() => el.textContent = `${num}B`, 2000);
+                        } else if (text.includes('M+')) {
+                            animateCounter(el, 1);
+                            setTimeout(() => el.textContent = '1M+', 2000);
+                        }
+                    });
+                    heroStatsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        heroStatsObserver.observe(document.querySelector('.hero-stats'));
+    </script>
+</body>
+</html>
